@@ -1,0 +1,7 @@
+[webservers]
+ans-web1
+ans-web2
+
+[databases]
+ans-db1
+ans-db2

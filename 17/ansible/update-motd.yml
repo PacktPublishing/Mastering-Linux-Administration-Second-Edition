@@ -1,0 +1,17 @@
+---
+- name: Update the message of the day
+  hosts: all
+  become: yes
+  vars:
+    date: "2023-10-24"
+    start_time: "02:00:00"
+    end_time: "03:00:00"
+    utc: "-0800"
+  tasks:
+    - name: Deploy the 'motd' template
+      template:
+        src: motd.j2
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: 0644

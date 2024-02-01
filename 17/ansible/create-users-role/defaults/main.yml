@@ -1,0 +1,4 @@
+---
+# defaults file for create-users-role
+users_file: users-role.yml
+passwords_file: users_passwords-role.yml

@@ -1,0 +1,22 @@
+---
+# Passwords are stored in the users_passwords.yml file
+
+webusers:
+  - username: webuser
+    comment: regular web user
+
+  - username: webadmin
+    comment: web administrator
+
+  - username: webdev
+    comment: web developer
+
+dbusers:
+  - username: dbuser
+    comment: Regular database user
+
+  - username: dbadmin
+    comment: Database administrator
+
+  - username: dbdev
+    comment: Database developer

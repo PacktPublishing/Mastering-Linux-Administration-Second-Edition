@@ -1,0 +1,13 @@
+---
+- name: Install system updates
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Install Ubuntu system updates
+    apt: upgrade=dist update_cache=yes
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Install Debian system updates
+    apt: upgrade=dist update_cache=yes
+    when: ansible_distribution == "Debian"

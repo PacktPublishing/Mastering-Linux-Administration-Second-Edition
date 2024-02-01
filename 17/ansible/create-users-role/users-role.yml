@@ -1,0 +1,13 @@
+---
+# Example user accounts.
+# Passwords are stored in users_passwords-role.yml
+
+list:
+  - username: testuser
+    comment: Test user
+
+  - username: testadmin
+    comment: Test admin
+
+  - username: testdev
+    comment: Test dev
